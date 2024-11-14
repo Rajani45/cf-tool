@@ -3,17 +3,6 @@ resource "commercetools_product_type" "my-product-type00400" {
   name        = "Lens specification00400"
   description = "All the specific info concerning the lens"
 
-  #attribute {
-    #name = "autofocus"
-    #label = {
-      #en = "Has autofocus"
-      #nl = "Heeft autofocus"
-   # }
-   # required = true
-    #type {
-     # name = "boolean"
-   # }
-  #}
 
   attribute {
     name = "lens_product_no"
@@ -33,17 +22,7 @@ resource "commercetools_product_type" "my-product-type00400" {
     searchable = true
   }
 
-  attribute {
-    name = "previous_model"
-    label = {
-      en = "Previous model"
-      nl = "Vorig model"
-    }
-    type {
-      name              = "reference"
-      reference_type_id = "product"
-    }
-  }
+  
 
   attribute {
     name = "some-flag"
